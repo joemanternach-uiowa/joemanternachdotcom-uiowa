@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple website to share information about me!">
+    <title>Joe Manternach</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+    
+    
+    <header class="sidebar">
+        <h2>Joe Manternach</h2>
+        <ul>
+            <li><a href="#" onclick="show_content('about-me')">About me</a></li>
+            <li><a href="#" onclick="show_content('projects')">Projects</a></li>
+            <li><a href="#" onclick="show_content('undecided')"></a></li>
+        </ul>
+    </header>
+    
+
+    <main class="main-content">
+        
+        
+        <section class="content-section" id="about-me">
+            
+            <div class="container">
+
+                <div class="subsection">
+
+                    <h2>Joke of the Day</h2>
+                    <p>
+                        What do you call a hippie's wife?
+                    </p>
+
+                    <p id="answer" style="display: none;">
+                        Mississippi.
+                    </p>
+
+                    <button onclick="toggle_answer()">Show/hide Answer</button>
+
+                </div>
+
+            </div>
+            
+            <div class="container">
+                <div class="grid">
+                    <div class="subsection">
+                        <h1>Running</h1>
+                        <div class="image-container-one-pic">
+                            <img src="pics/running.png" alt="photo at the finish line of the flying pig" height="500px">
+                        </div>
+                        <p>
+                            I enjoy the running lifestyle, from training daily to trying out new engery
+                            chews. I've ran two half marathons, one on a trail and another at the Flying Pig 
+                            in Cincinnati. Next up: one more half, then the full! 
+                        </p>
+                    </div>
+                    <div class="subsection">
+                        <h1>Fishing</h1>
+                        <div class="image-container-two-pic">
+                            <img src="pics/fish3.png" alt="small mouth bass">
+                            <img src="pics/fish1.png" alt="small mouth bass">
+                        </div>
+                        <p>
+                            There's nothing quite like hitting the creek and tracking down some monsters. 
+                            My primary targets are small and large mouth bass, with the occasional northern 
+                            pike or crappie. I prefer fishing in creeks because it adds an extra thrill to 
+                            the adventure (totally not because I don't have a boat).
+                        </p>
+                        
+                    </div>
+                    <div class="subsection-two-col">
+                        <h1>Video Game Development</h1>
+                        <div class="image-container-two-pic">
+                            <img src="pics/asteroid_game.png" alt="asteroid-game">
+                            <img src="pics/platformer_level_1.png" alt="platformer-game">
+                        </div>
+                        <p>
+                            I've created several video games, both as class projects and for my own enjoyment. 
+                            I've made a retro-style asteroid game and a Mario-like platformer, which were both 
+                            exciting and challenging to develop. I've used Python, C++, and Godot for these 
+                            projects, and I enjoy the blend of creativity and problem-solving that game development 
+                            requires.
+                        </p>
+                        
+                    </div>
+                </div>
+                
+            </div>  
+            
+            <div class="container">
+
+                <div class="subsection">
+
+                    <h1>Don't be a stranger</h1>
+                    <p>To learn more about me as a professional and student download my resume below!</p>
+                    <a href="resume/joseph_manternach_resume.pdf" target="_blank">joseph_manternach_resume.pdf</a>
+
+                </div>
+
+            </div>
+        </section>
+
+        
+        <section class="content-section" id="projects" style="display: none;">
+           
+            <div class="container">
+                
+                <div class="grid">
+                    
+                    <div class="subsection">
+                        
+                        <h1>Internet Protocol</h1>
+                        <p>
+                            Using Python and our imagination, my friend and I crafted an internet 
+                            protocol. Utilizing TCP, we sent data packets, ACKs, and NACKs. To 
+                            demonstrate our protocol, we created a video game called "Plant Protocol."
+                        </p>
+                        
+                        <p>
+                            When the player starts the game, they are prompted with a login screen. 
+                            From there, our protocol manages communication between the client and 
+                            server. After the user logs in, the client sends a communication to the 
+                            server with the player's username. The server then responds by sending 
+                            the client the player's plants and other relevant information.
+                        </p>
+                        
+                        <p>
+                            At the end of the session, the client sends the server an updated version 
+                            of the plant list and other information, such as hunger and thirst levels. 
+                            Through this project, I learned how to set up server and client 
+                            communications as well as multithreading.
+                        </p>
+
+                    </div>
+                    
+                    <div class="subsection">
+                        
+                        <h1>Pulse Width Modulation Motor Controller</h1>
+                        
+                        <div class="image-container-one-pic">
+                            <img src="pics/pwm_motor_controller.png" alt="pwm motor controller circuit">
+                        </div>
+                        
+                        <p>
+                            I built a Pulse Width Modulation (PWM) motor controller, 
+                            a crucial component for managing motor speed and efficiency. This controller 
+                            utilizes a 555 timer IC to generate the PWM signal, allowing for precise control 
+                            over the duty cycle. A potentiometer adjusts this duty cycle, which directly 
+                            influences the motor's performance. 
+                        </p>
+                        
+                        <p>
+                            By integrating resistors and capacitors, I ensured stable signal processing and 
+                            smooth operation. The MOSFET acts as a high-speed switch, enabling accurate 
+                            regulation of the power delivered to the motor. 
+                        </p>
+                        
+                        <p>
+                            This setup allows for fine-tuning of motor speed with high efficiency and minimal 
+                            energy loss, highlighting a blend of practical electronics, hands-on engineering 
+                            skills, and effective use of the 555 timer IC.
+                        </p>
+                    </div>
+
+                    <div class="subsection">
+                        
+                        <h1>Heart Rate Monitor</h1>
+                    
+                        <div class="image-container-one-pic">
+                            <img src="pics/heart_monitor.png" alt="heart rate monitor circuit">
+                        </div>
+
+                        <p>
+                            Using a two-stage operational amplifier, an infrared LED, some robust resistors, 
+                            and the university's finest lab equipment, I created an operational heart 
+                            rate monitoring system. The system is designed to power an LED when the oxygen 
+                            levels in the blood are sufficiently high.
+                        </p>
+
+                        <p>
+                            The infrared LED transmitter and receiver detect the heart rate signal, which 
+                            is then fed through a two-stage amplifier. This amplification process boosts 
+                            the signal from millivolts to volts. Once amplified, the signal powers an LED, 
+                            indicating to the user that their heart is beating.
+                        
+                        </p>
+                    
+                    </div>
+                
+                </div>
+            
+            </div> 
+        
+        </section>
+    
+
+        <section class="content-section" id="undecided" style="display: none;">
+            
+
+        </section>
+    
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Joe Manternach</p>
+    </footer>
+
+
+    <script src="js/scripts.js"></script>
+
+
+</body>
+
+
+</html>
