@@ -14,6 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
+    background-image: url(images/nature.png);
     background-size: cover;
     background-position: center;
 }
@@ -50,7 +51,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background-color: #4e9b6f;
+    background-color: #4e9b6f; /*#*/
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -62,8 +63,9 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 30px;
+    margin-left: 15%;
 }
 .header-text h1{
     font-size: 60px;
@@ -73,14 +75,6 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #4e9b6f;
 }
-
-.header-img-container{
-    display: flex;
-    padding: 0;
-    height: 45vh;
-    justify-content: right;
-}
-
 /* --------about-------- */
 #about{
     padding: 80px 0;
@@ -98,6 +92,11 @@ nav ul li a:hover::after{
     flex-basis: 35%; /*width*/
     border-radius: 15px;
 
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
 }
 
 .about-col-2{
@@ -164,7 +163,7 @@ nav ul li a:hover::after{
 
 .projects-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -362,11 +361,12 @@ nav .fa-solid{
 }
 
 @media only screen and (max-width: 600px){
-    .header-img-container{
-        display: none;
+
+    #header{
+        background-image: url(images/small-nature.png);
     }
     .header-text{
-        margin-top: 100%;
+        margin-top: 60%;
         font-size: 16px;
     }
     .header-text h1{
@@ -415,7 +415,12 @@ nav .fa-solid{
         font-size: 16px;
         margin-right: 20px;
     }
-
+    .projects-list{
+        display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    }
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
